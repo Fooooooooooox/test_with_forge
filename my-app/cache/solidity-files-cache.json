@@ -300,49 +300,6 @@
         }
       }
     },
-    "script/blacksmith.s.sol": {
-      "lastModificationDate": 1656141300377,
-      "contentHash": "4b7591b251a21f36fdc6b9dbd070246b",
-      "sourceName": "script/blacksmith.s.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "lib/forge-std/src/Script.sol",
-        "lib/forge-std/src/Vm.sol",
-        "lib/forge-std/src/console.sol",
-        "lib/forge-std/src/console2.sol"
-      ],
-      "versionRequirement": "^0.8.13",
-      "artifacts": {
-        "ContractScript": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "blacksmith.s.sol/ContractScript.json"
-        }
-      }
-    },
     "src/Contract.sol": {
       "lastModificationDate": 1656134357968,
       "contentHash": "0a4db02f64172ef6ba21d89f49444a92",
@@ -465,8 +422,8 @@
       }
     },
     "test/blacksmith.t.sol": {
-      "lastModificationDate": 1656145803069,
-      "contentHash": "323dd8b0059eb7097c109d8e946527a2",
+      "lastModificationDate": 1656154371912,
+      "contentHash": "26dc93a136bdb0347607715f080f43cd",
       "sourceName": "test/blacksmith.t.sol",
       "solcConfig": {
         "settings": {

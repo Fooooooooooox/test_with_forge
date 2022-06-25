@@ -27,7 +27,7 @@ contract BlackSmithTest is DSTest {
     }
 
     // testFail: The inverse of the test prefix - if the function does not revert, the test fails
-    function testFailOwner() public view {
+    function testFailOwner() public view{
         user.callOnlyOwner(blacksmith);
     }
 }

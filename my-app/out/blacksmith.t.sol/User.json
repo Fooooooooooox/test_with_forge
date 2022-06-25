@@ -1,0 +1,907 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract BlackSmith",
+          "name": "b",
+          "type": "address"
+        }
+      ],
+      "name": "callOnlyOwner",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060f48061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80632053cacf14602d575b600080fd5b603c60383660046090565b603e565b005b806001600160a01b0316631036e0a86040518163ffffffff1660e01b815260040160006040518083038186803b158015607657600080fd5b505afa1580156089573d6000803e3d6000fd5b5050505050565b60006020828403121560a157600080fd5b81356001600160a01b038116811460b757600080fd5b939250505056fea26469706673582212201c44055176023a726819b30dc83fbe9465b82284e86a23ad3475e3d3ebf8ad9264736f6c634300080f0033",
+    "sourceMap": "138:101:7:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80632053cacf14602d575b600080fd5b603c60383660046090565b603e565b005b806001600160a01b0316631036e0a86040518163ffffffff1660e01b815260040160006040518083038186803b158015607657600080fd5b505afa1580156089573d6000803e3d6000fd5b5050505050565b60006020828403121560a157600080fd5b81356001600160a01b038116811460b757600080fd5b939250505056fea26469706673582212201c44055176023a726819b30dc83fbe9465b82284e86a23ad3475e3d3ebf8ad9264736f6c634300080f0033",
+    "sourceMap": "138:101:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;158:79;;;;;;:::i;:::-;;:::i;:::-;;;217:1;-1:-1:-1;;;;;217:11:7;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;158:79;:::o;14:306:8:-;93:6;146:2;134:9;125:7;121:23;117:32;114:52;;;162:1;159;152:12;114:52;188:23;;-1:-1:-1;;;;;240:31:8;;230:42;;220:70;;286:1;283;276:12;220:70;309:5;14:306;-1:-1:-1;;;14:306:8:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "callOnlyOwner(address)": "2053cacf"
+  },
+  "ast": {
+    "absolutePath": "test/blacksmith.t.sol",
+    "id": 21031,
+    "exportedSymbols": {
+      "BlackSmith": [
+        20958
+      ],
+      "BlackSmithTest": [
+        21030
+      ],
+      "DSTest": [
+        1786
+      ],
+      "Script": [
+        1818
+      ],
+      "StdStorage": [
+        3144
+      ],
+      "Test": [
+        3046
+      ],
+      "User": [
+        20975
+      ],
+      "Vm": [
+        4803
+      ],
+      "console": [
+        12867
+      ],
+      "console2": [
+        20931
+      ],
+      "stdError": [
+        3116
+      ],
+      "stdMath": [
+        4381
+      ],
+      "stdStorage": [
+        4234
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:864:7",
+    "nodes": [
+      {
+        "id": 20960,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:7",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 20961,
+        "nodeType": "ImportDirective",
+        "src": "65:39:7",
+        "absolutePath": "lib/forge-std/src/Test.sol",
+        "file": "../lib/forge-std/src/Test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 21031,
+        "sourceUnit": 4382,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 20962,
+        "nodeType": "ImportDirective",
+        "src": "105:31:7",
+        "absolutePath": "src/blacksmith.sol",
+        "file": "../src/blacksmith.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 21031,
+        "sourceUnit": 20959,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 20975,
+        "nodeType": "ContractDefinition",
+        "src": "138:101:7",
+        "nodes": [
+          {
+            "id": 20974,
+            "nodeType": "FunctionDefinition",
+            "src": "158:79:7",
+            "body": {
+              "id": 20973,
+              "nodeType": "Block",
+              "src": "207:30:7",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 20968,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20965,
+                        "src": "217:1:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                          "typeString": "contract BlackSmith"
+                        }
+                      },
+                      "id": 20970,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "onlyOwner",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 20957,
+                      "src": "217:11:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$__$returns$__$",
+                        "typeString": "function () view external"
+                      }
+                    },
+                    "id": 20971,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "217:13:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 20972,
+                  "nodeType": "ExpressionStatement",
+                  "src": "217:13:7"
+                }
+              ]
+            },
+            "functionSelector": "2053cacf",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "callOnlyOwner",
+            "nameLocation": "167:13:7",
+            "parameters": {
+              "id": 20966,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20965,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nameLocation": "192:1:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20974,
+                  "src": "181:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                    "typeString": "contract BlackSmith"
+                  },
+                  "typeName": {
+                    "id": 20964,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 20963,
+                      "name": "BlackSmith",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 20958,
+                      "src": "181:10:7"
+                    },
+                    "referencedDeclaration": 20958,
+                    "src": "181:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                      "typeString": "contract BlackSmith"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "180:14:7"
+            },
+            "returnParameters": {
+              "id": 20967,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "207:0:7"
+            },
+            "scope": 20975,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "User",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          20975
+        ],
+        "name": "User",
+        "nameLocation": "147:4:7",
+        "scope": 21031,
+        "usedErrors": []
+      },
+      {
+        "id": 21030,
+        "nodeType": "ContractDefinition",
+        "src": "241:661:7",
+        "nodes": [
+          {
+            "id": 20980,
+            "nodeType": "VariableDeclaration",
+            "src": "281:21:7",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "blacksmith",
+            "nameLocation": "292:10:7",
+            "scope": 21030,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_BlackSmith_$20958",
+              "typeString": "contract BlackSmith"
+            },
+            "typeName": {
+              "id": 20979,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 20978,
+                "name": "BlackSmith",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 20958,
+                "src": "281:10:7"
+              },
+              "referencedDeclaration": 20958,
+              "src": "281:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                "typeString": "contract BlackSmith"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 20983,
+            "nodeType": "VariableDeclaration",
+            "src": "308:9:7",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "user",
+            "nameLocation": "313:4:7",
+            "scope": 21030,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_User_$20975",
+              "typeString": "contract User"
+            },
+            "typeName": {
+              "id": 20982,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 20981,
+                "name": "User",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 20975,
+                "src": "308:4:7"
+              },
+              "referencedDeclaration": 20975,
+              "src": "308:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_User_$20975",
+                "typeString": "contract User"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 21005,
+            "nodeType": "FunctionDefinition",
+            "src": "404:164:7",
+            "body": {
+              "id": 21004,
+              "nodeType": "Block",
+              "src": "428:140:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 20995,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 20986,
+                      "name": "blacksmith",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 20980,
+                      "src": "492:10:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                        "typeString": "contract BlackSmith"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "arguments": [
+                            {
+                              "id": 20992,
+                              "name": "this",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -28,
+                              "src": "528:4:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_BlackSmithTest_$21030",
+                                "typeString": "contract BlackSmithTest"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_BlackSmithTest_$21030",
+                                "typeString": "contract BlackSmithTest"
+                              }
+                            ],
+                            "id": 20991,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "520:7:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 20990,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "520:7:7",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 20993,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "520:13:7",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 20989,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "505:14:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_BlackSmith_$20958_$",
+                          "typeString": "function (address) returns (contract BlackSmith)"
+                        },
+                        "typeName": {
+                          "id": 20988,
+                          "nodeType": "UserDefinedTypeName",
+                          "pathNode": {
+                            "id": 20987,
+                            "name": "BlackSmith",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 20958,
+                            "src": "509:10:7"
+                          },
+                          "referencedDeclaration": 20958,
+                          "src": "509:10:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                            "typeString": "contract BlackSmith"
+                          }
+                        }
+                      },
+                      "id": 20994,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "505:29:7",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                        "typeString": "contract BlackSmith"
+                      }
+                    },
+                    "src": "492:42:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                      "typeString": "contract BlackSmith"
+                    }
+                  },
+                  "id": 20996,
+                  "nodeType": "ExpressionStatement",
+                  "src": "492:42:7"
+                },
+                {
+                  "expression": {
+                    "id": 21002,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 20997,
+                      "name": "user",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 20983,
+                      "src": "544:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_User_$20975",
+                        "typeString": "contract User"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 21000,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "551:8:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_User_$20975_$",
+                          "typeString": "function () returns (contract User)"
+                        },
+                        "typeName": {
+                          "id": 20999,
+                          "nodeType": "UserDefinedTypeName",
+                          "pathNode": {
+                            "id": 20998,
+                            "name": "User",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 20975,
+                            "src": "555:4:7"
+                          },
+                          "referencedDeclaration": 20975,
+                          "src": "555:4:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_User_$20975",
+                            "typeString": "contract User"
+                          }
+                        }
+                      },
+                      "id": 21001,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "551:10:7",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_User_$20975",
+                        "typeString": "contract User"
+                      }
+                    },
+                    "src": "544:17:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_User_$20975",
+                      "typeString": "contract User"
+                    }
+                  },
+                  "id": 21003,
+                  "nodeType": "ExpressionStatement",
+                  "src": "544:17:7"
+                }
+              ]
+            },
+            "functionSelector": "0a9254e4",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setUp",
+            "nameLocation": "413:5:7",
+            "parameters": {
+              "id": 20984,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "418:2:7"
+            },
+            "returnParameters": {
+              "id": 20985,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "428:0:7"
+            },
+            "scope": 21030,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 21019,
+            "nodeType": "FunctionDefinition",
+            "src": "574:138:7",
+            "body": {
+              "id": 21018,
+              "nodeType": "Block",
+              "src": "602:110:7",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "id": 21009,
+                            "name": "blacksmith",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 20980,
+                            "src": "672:10:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                              "typeString": "contract BlackSmith"
+                            }
+                          },
+                          "id": 21010,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "owner",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 20935,
+                          "src": "672:16:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
+                            "typeString": "function () view external returns (address)"
+                          }
+                        },
+                        "id": 21011,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "672:18:7",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 21014,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "699:4:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_BlackSmithTest_$21030",
+                              "typeString": "contract BlackSmithTest"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_BlackSmithTest_$21030",
+                              "typeString": "contract BlackSmithTest"
+                            }
+                          ],
+                          "id": 21013,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "691:7:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 21012,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "691:7:7",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 21015,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "691:13:7",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 21008,
+                      "name": "assertEq",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        320,
+                        345,
+                        375,
+                        400,
+                        459,
+                        484,
+                        514,
+                        539,
+                        1639,
+                        1674
+                      ],
+                      "referencedDeclaration": 320,
+                      "src": "663:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_address_$returns$__$",
+                        "typeString": "function (address,address)"
+                      }
+                    },
+                    "id": 21016,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "663:42:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 21017,
+                  "nodeType": "ExpressionStatement",
+                  "src": "663:42:7"
+                }
+              ]
+            },
+            "functionSelector": "9e535c69",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testOwner",
+            "nameLocation": "583:9:7",
+            "parameters": {
+              "id": 21006,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "592:2:7"
+            },
+            "returnParameters": {
+              "id": 21007,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "602:0:7"
+            },
+            "scope": 21030,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 21029,
+            "nodeType": "FunctionDefinition",
+            "src": "816:84:7",
+            "body": {
+              "id": 21028,
+              "nodeType": "Block",
+              "src": "853:47:7",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 21025,
+                        "name": "blacksmith",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20980,
+                        "src": "882:10:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                          "typeString": "contract BlackSmith"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_BlackSmith_$20958",
+                          "typeString": "contract BlackSmith"
+                        }
+                      ],
+                      "expression": {
+                        "id": 21022,
+                        "name": "user",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20983,
+                        "src": "863:4:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_User_$20975",
+                          "typeString": "contract User"
+                        }
+                      },
+                      "id": 21024,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "callOnlyOwner",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 20974,
+                      "src": "863:18:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_contract$_BlackSmith_$20958_$returns$__$",
+                        "typeString": "function (contract BlackSmith) view external"
+                      }
+                    },
+                    "id": 21026,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "863:30:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 21027,
+                  "nodeType": "ExpressionStatement",
+                  "src": "863:30:7"
+                }
+              ]
+            },
+            "functionSelector": "dbc62a7e",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testFailOwner",
+            "nameLocation": "825:13:7",
+            "parameters": {
+              "id": 21020,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "838:2:7"
+            },
+            "returnParameters": {
+              "id": 21021,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "853:0:7"
+            },
+            "scope": 21030,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 20976,
+              "name": "DSTest",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1786,
+              "src": "268:6:7"
+            },
+            "id": 20977,
+            "nodeType": "InheritanceSpecifier",
+            "src": "268:6:7"
+          }
+        ],
+        "canonicalName": "BlackSmithTest",
+        "contractDependencies": [
+          20958,
+          20975
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          21030,
+          1786
+        ],
+        "name": "BlackSmithTest",
+        "nameLocation": "250:14:7",
+        "scope": 21031,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 7
+}

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.10;
 
-import "../lib/forge-std/src/Test.sol";
+import "forge-std/Test.sol";
 
 error Unauthorized();
 
@@ -40,6 +40,13 @@ contract OwnerUpOnlyTest is Test {
     // how to turn traces on?
     // use this command: forge test -vvvv --match-test testFailIncrementAsNotOwner
     function testFailIncrementAsNotOwner() public {
+        vm.prank(address(0));
+        upOnly.increment();
+    }
+    
+    // Notice that we replaced `testFail` with `test`
+    function testIncrementAsNotOwner() public {
+        vm.expectRevert(Unauthorized.selector);
         vm.prank(address(0));
         upOnly.increment();
     }

@@ -15,13 +15,13 @@
     }
   ],
   "bytecode": {
-    "object": "0x6080604052348015600f57600080fd5b5060918061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806304f3bcec14602d575b600080fd5b600254603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea26469706673582212207a1fb0c025b6cbeb9e9f3636d687c9a21a07a5ec99f2cfd71b8e43b356c147fb64736f6c634300080a0033",
-    "sourceMap": "58:213:61:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x6080604052348015600f57600080fd5b5060918061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806304f3bcec14602d575b600080fd5b600254603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea264697066735822122051e26d797bc2d288605a4f0b10ccd8f65a36ca9c2ba53adfdfb6906a848cc8b864736f6c634300080a0033",
+    "sourceMap": "58:213:59:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806304f3bcec14602d575b600080fd5b600254603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea26469706673582212207a1fb0c025b6cbeb9e9f3636d687c9a21a07a5ec99f2cfd71b8e43b356c147fb64736f6c634300080a0033",
-    "sourceMap": "58:213:61:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;206:23;;;;;-1:-1:-1;;;;;206:23:61;;;;;;-1:-1:-1;;;;;178:32:76;;;160:51;;148:2;133:18;206:23:61;;;;;;",
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806304f3bcec14602d575b600080fd5b600254603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea264697066735822122051e26d797bc2d288605a4f0b10ccd8f65a36ca9c2ba53adfdfb6906a848cc8b864736f6c634300080a0033",
+    "sourceMap": "58:213:59:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;206:23;;;;;-1:-1:-1;;;;;206:23:59;;;;;;-1:-1:-1;;;;;178:32:73;;;160:51;;148:2;133:18;206:23:59;;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {
@@ -29,19 +29,19 @@
   },
   "ast": {
     "absolutePath": "src/mocks/MockWeb3EntryExtendStorage.sol",
-    "id": 34012,
+    "id": 17400,
     "exportedSymbols": {
       "MockWeb3EntryExtendStorage": [
-        34011
+        17399
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:239:61",
+    "src": "33:239:59",
     "nodes": [
       {
-        "id": 34000,
+        "id": 17388,
         "nodeType": "PragmaDirective",
-        "src": "33:23:61",
+        "src": "33:23:59",
         "literals": [
           "solidity",
           "0.8",
@@ -49,19 +49,19 @@
         ]
       },
       {
-        "id": 34011,
+        "id": 17399,
         "nodeType": "ContractDefinition",
-        "src": "58:213:61",
+        "src": "58:213:59",
         "nodes": [
           {
-            "id": 34002,
+            "id": 17390,
             "nodeType": "VariableDeclaration",
-            "src": "100:26:61",
+            "src": "100:26:59",
             "constant": false,
             "mutability": "mutable",
             "name": "periphery",
-            "nameLocation": "117:9:61",
-            "scope": 34011,
+            "nameLocation": "117:9:59",
+            "scope": 17399,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -69,10 +69,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 34001,
+              "id": 17389,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "100:7:61",
+              "src": "100:7:59",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -82,14 +82,14 @@
             "visibility": "internal"
           },
           {
-            "id": 34006,
+            "id": 17394,
             "nodeType": "VariableDeclaration",
-            "src": "143:57:61",
+            "src": "143:57:59",
             "constant": false,
             "mutability": "mutable",
             "name": "_operatorByCharacter",
-            "nameLocation": "180:20:61",
-            "scope": 34011,
+            "nameLocation": "180:20:59",
+            "scope": 17399,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -97,28 +97,28 @@
               "typeString": "mapping(uint256 => address)"
             },
             "typeName": {
-              "id": 34005,
+              "id": 17393,
               "keyType": {
-                "id": 34003,
+                "id": 17391,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
-                "src": "151:7:61",
+                "src": "151:7:59",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "143:27:61",
+              "src": "143:27:59",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                 "typeString": "mapping(uint256 => address)"
               },
               "valueType": {
-                "id": 34004,
+                "id": 17392,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "162:7:61",
+                "src": "162:7:59",
                 "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
@@ -129,15 +129,15 @@
             "visibility": "internal"
           },
           {
-            "id": 34008,
+            "id": 17396,
             "nodeType": "VariableDeclaration",
-            "src": "206:23:61",
+            "src": "206:23:59",
             "constant": false,
             "functionSelector": "04f3bcec",
             "mutability": "mutable",
             "name": "resolver",
-            "nameLocation": "221:8:61",
-            "scope": 34011,
+            "nameLocation": "221:8:59",
+            "scope": 17399,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -145,10 +145,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 34007,
+              "id": 17395,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "206:7:61",
+              "src": "206:7:59",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -158,14 +158,14 @@
             "visibility": "public"
           },
           {
-            "id": 34010,
+            "id": 17398,
             "nodeType": "VariableDeclaration",
-            "src": "235:33:61",
+            "src": "235:33:59",
             "constant": false,
             "mutability": "mutable",
             "name": "_additionalValue",
-            "nameLocation": "252:16:61",
-            "scope": 34011,
+            "nameLocation": "252:16:59",
+            "scope": 17399,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -173,10 +173,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 34009,
+              "id": 17397,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "235:7:61",
+              "src": "235:7:59",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -192,15 +192,15 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          34011
+          17399
         ],
         "name": "MockWeb3EntryExtendStorage",
-        "nameLocation": "67:26:61",
-        "scope": 34012,
+        "nameLocation": "67:26:59",
+        "scope": 17400,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 61
+  "id": 59
 }

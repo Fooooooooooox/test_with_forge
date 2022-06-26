@@ -431,53 +431,53 @@
   },
   "ast": {
     "absolutePath": "src/base/NFTBase.sol",
-    "id": 9390,
+    "id": 25972,
     "exportedSymbols": {
       "Address": [
-        5068
+        21650
       ],
       "Context": [
-        5090
+        21672
       ],
       "ERC165": [
-        5340
+        21922
       ],
       "ERC721": [
-        9002
+        25584
       ],
       "ERC721Enumerable": [
-        9339
+        25921
       ],
       "Events": [
-        11375
+        27984
       ],
       "IERC165": [
-        5352
+        21934
       ],
       "IERC721": [
-        4696
+        21278
       ],
       "IERC721Enumerable": [
-        4745
+        21327
       ],
       "IERC721Metadata": [
-        4772
+        21354
       ],
       "IERC721Receiver": [
-        4714
+        21296
       ],
       "NFTBase": [
-        9389
+        25971
       ],
       "Strings": [
-        5316
+        21898
       ]
     },
     "nodeType": "SourceUnit",
     "src": "33:516:21",
     "nodes": [
       {
-        "id": 9341,
+        "id": 25923,
         "nodeType": "PragmaDirective",
         "src": "33:23:21",
         "literals": [
@@ -487,40 +487,40 @@
         ]
       },
       {
-        "id": 9342,
+        "id": 25924,
         "nodeType": "ImportDirective",
         "src": "58:32:21",
         "absolutePath": "src/base/ERC721Enumerable.sol",
         "file": "./ERC721Enumerable.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 9390,
-        "sourceUnit": 9340,
+        "scope": 25972,
+        "sourceUnit": 25922,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 9343,
+        "id": 25925,
         "nodeType": "ImportDirective",
         "src": "91:33:21",
         "absolutePath": "src/libraries/Events.sol",
         "file": "../libraries/Events.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 9390,
-        "sourceUnit": 11376,
+        "scope": 25972,
+        "sourceUnit": 27985,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 9389,
+        "id": 25971,
         "nodeType": "ContractDefinition",
         "src": "126:422:21",
         "nodes": [
           {
-            "id": 9369,
+            "id": 25951,
             "nodeType": "FunctionDefinition",
             "src": "178:196:21",
             "body": {
-              "id": 9368,
+              "id": 25950,
               "nodeType": "Block",
               "src": "254:120:21",
               "statements": [
@@ -528,11 +528,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 9355,
+                        "id": 25937,
                         "name": "name",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9347,
+                        "referencedDeclaration": 25929,
                         "src": "285:4:21",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -540,11 +540,11 @@
                         }
                       },
                       {
-                        "id": 9356,
+                        "id": 25938,
                         "name": "symbol",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9349,
+                        "referencedDeclaration": 25931,
                         "src": "291:6:21",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -564,32 +564,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 9352,
+                        "id": 25934,
                         "name": "ERC721",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9002,
+                        "referencedDeclaration": 25584,
                         "src": "264:6:21",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ERC721_$9002_$",
+                          "typeIdentifier": "t_type$_t_contract$_ERC721_$25584_$",
                           "typeString": "type(contract ERC721)"
                         }
                       },
-                      "id": 9354,
+                      "id": 25936,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "__ERC721_Init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 8199,
+                      "referencedDeclaration": 24781,
                       "src": "264:20:21",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_calldata_ptr_$_t_string_calldata_ptr_$returns$__$",
                         "typeString": "function (string calldata,string calldata)"
                       }
                     },
-                    "id": 9357,
+                    "id": 25939,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -604,7 +604,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9358,
+                  "id": 25940,
                   "nodeType": "ExpressionStatement",
                   "src": "264:34:21"
                 },
@@ -612,11 +612,11 @@
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 9362,
+                        "id": 25944,
                         "name": "name",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9347,
+                        "referencedDeclaration": 25929,
                         "src": "337:4:21",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -624,11 +624,11 @@
                         }
                       },
                       {
-                        "id": 9363,
+                        "id": 25945,
                         "name": "symbol",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9349,
+                        "referencedDeclaration": 25931,
                         "src": "343:6:21",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -637,7 +637,7 @@
                       },
                       {
                         "expression": {
-                          "id": 9364,
+                          "id": 25946,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -648,7 +648,7 @@
                             "typeString": "block"
                           }
                         },
-                        "id": 9365,
+                        "id": 25947,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -678,32 +678,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 9359,
+                        "id": 25941,
                         "name": "Events",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 11375,
+                        "referencedDeclaration": 27984,
                         "src": "314:6:21",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Events_$11375_$",
+                          "typeIdentifier": "t_type$_t_contract$_Events_$27984_$",
                           "typeString": "type(library Events)"
                         }
                       },
-                      "id": 9361,
+                      "id": 25943,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "BaseInitialized",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11032,
+                      "referencedDeclaration": 27641,
                       "src": "314:22:21",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$returns$__$",
                         "typeString": "function (string memory,string memory,uint256)"
                       }
                     },
-                    "id": 9366,
+                    "id": 25948,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -718,7 +718,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9367,
+                  "id": 25949,
                   "nodeType": "EmitStatement",
                   "src": "309:58:21"
                 }
@@ -730,17 +730,17 @@
             "name": "_initialize",
             "nameLocation": "187:11:21",
             "parameters": {
-              "id": 9350,
+              "id": 25932,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9347,
+                  "id": 25929,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "215:4:21",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9369,
+                  "scope": 25951,
                   "src": "199:20:21",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -749,7 +749,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 9346,
+                    "id": 25928,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "199:6:21",
@@ -762,12 +762,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 9349,
+                  "id": 25931,
                   "mutability": "mutable",
                   "name": "symbol",
                   "nameLocation": "237:6:21",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9369,
+                  "scope": 25951,
                   "src": "221:22:21",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -776,7 +776,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 9348,
+                    "id": 25930,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "221:6:21",
@@ -791,22 +791,22 @@
               "src": "198:46:21"
             },
             "returnParameters": {
-              "id": 9351,
+              "id": 25933,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "254:0:21"
             },
-            "scope": 9389,
+            "scope": 25971,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 9388,
+            "id": 25970,
             "nodeType": "FunctionDefinition",
             "src": "380:166:21",
             "body": {
-              "id": 9387,
+              "id": 25969,
               "nodeType": "Block",
               "src": "426:120:21",
               "statements": [
@@ -817,7 +817,7 @@
                         "arguments": [
                           {
                             "expression": {
-                              "id": 9376,
+                              "id": 25958,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -828,7 +828,7 @@
                                 "typeString": "msg"
                               }
                             },
-                            "id": 9377,
+                            "id": 25959,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -842,11 +842,11 @@
                             }
                           },
                           {
-                            "id": 9378,
+                            "id": 25960,
                             "name": "tokenId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9371,
+                            "referencedDeclaration": 25953,
                             "src": "475:7:21",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -865,18 +865,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 9375,
+                          "id": 25957,
                           "name": "_isApprovedOrOwner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8616,
+                          "referencedDeclaration": 25198,
                           "src": "444:18:21",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (address,uint256) view returns (bool)"
                           }
                         },
-                        "id": 9379,
+                        "id": 25961,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -893,7 +893,7 @@
                       },
                       {
                         "hexValue": "4e4654426173653a204e6f744f776e65724f72417070726f766564",
-                        "id": 9380,
+                        "id": 25962,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -919,7 +919,7 @@
                           "typeString": "literal_string \"NFTBase: NotOwnerOrApproved\""
                         }
                       ],
-                      "id": 9374,
+                      "id": 25956,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -933,7 +933,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 9381,
+                    "id": 25963,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -948,7 +948,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9382,
+                  "id": 25964,
                   "nodeType": "ExpressionStatement",
                   "src": "436:79:21"
                 },
@@ -956,11 +956,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 9384,
+                        "id": 25966,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9371,
+                        "referencedDeclaration": 25953,
                         "src": "531:7:21",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -975,18 +975,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 9383,
+                      "id": 25965,
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8786,
+                      "referencedDeclaration": 25368,
                       "src": "525:5:21",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 9385,
+                    "id": 25967,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1001,7 +1001,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9386,
+                  "id": 25968,
                   "nodeType": "ExpressionStatement",
                   "src": "525:14:21"
                 }
@@ -1014,17 +1014,17 @@
             "name": "burn",
             "nameLocation": "389:4:21",
             "parameters": {
-              "id": 9372,
+              "id": 25954,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9371,
+                  "id": 25953,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "402:7:21",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9388,
+                  "scope": 25970,
                   "src": "394:15:21",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1033,7 +1033,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9370,
+                    "id": 25952,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "394:7:21",
@@ -1048,12 +1048,12 @@
               "src": "393:17:21"
             },
             "returnParameters": {
-              "id": 9373,
+              "id": 25955,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "426:0:21"
             },
-            "scope": 9389,
+            "scope": 25971,
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
@@ -1063,13 +1063,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 9344,
+              "id": 25926,
               "name": "ERC721Enumerable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 9339,
+              "referencedDeclaration": 25921,
               "src": "155:16:21"
             },
-            "id": 9345,
+            "id": 25927,
             "nodeType": "InheritanceSpecifier",
             "src": "155:16:21"
           }
@@ -1079,19 +1079,19 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          9389,
-          9339,
-          4745,
-          9002,
-          4772,
-          4696,
-          5340,
-          5352,
-          5090
+          25971,
+          25921,
+          21327,
+          25584,
+          21354,
+          21278,
+          21922,
+          21934,
+          21672
         ],
         "name": "NFTBase",
         "nameLocation": "144:7:21",
-        "scope": 9390,
+        "scope": 25972,
         "usedErrors": []
       }
     ],

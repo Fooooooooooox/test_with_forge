@@ -86,7 +86,7 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Script": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Script.sol/Script.0.8.15.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Script.sol/Script.json"
         }
       }
     },
@@ -177,7 +177,7 @@
       "versionRequirement": ">=0.6.0",
       "artifacts": {
         "Vm": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Vm.sol/Vm.0.8.15.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Vm.sol/Vm.json"
         }
       }
     },
@@ -215,7 +215,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "console.sol/console.0.8.15.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "console.sol/console.json"
         }
       }
     },
@@ -253,7 +253,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console2": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "console2.sol/console2.0.8.15.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "console2.sol/console2.json"
         }
       }
     },
@@ -3423,8 +3423,8 @@
       }
     },
     "test/operatorAuthority.t.sol": {
-      "lastModificationDate": 1656260327010,
-      "contentHash": "dc4e9d7995170d086bbb8838fe8d6a06",
+      "lastModificationDate": 1656261718083,
+      "contentHash": "532b9e3fe582174898a686f3f59afebc",
       "sourceName": "test/operatorAuthority.t.sol",
       "solcConfig": {
         "settings": {

@@ -1,0 +1,276 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "resolver",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b5060918061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806304f3bcec14602d575b600080fd5b600254603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea2646970667358221220e5360241ae505d3d7023db554ccfc8c8d08c1639b858e9dd96e772d3c5fb39ca64736f6c634300080a0033",
+    "sourceMap": "125:306:70:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806304f3bcec14602d575b600080fd5b600254603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea2646970667358221220e5360241ae505d3d7023db554ccfc8c8d08c1639b858e9dd96e772d3c5fb39ca64736f6c634300080a0033",
+    "sourceMap": "125:306:70:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;324:23;;;;;-1:-1:-1;;;;;324:23:70;;;;;;-1:-1:-1;;;;;178:32:76;;;160:51;;148:2;133:18;324:23:70;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "resolver()": "04f3bcec"
+  },
+  "ast": {
+    "absolutePath": "src/storage/Web3EntryExtendStorage.sol",
+    "id": 35156,
+    "exportedSymbols": {
+      "EnumerableSet": [
+        24717
+      ],
+      "Web3EntryExtendStorage": [
+        35155
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:399:70",
+    "nodes": [
+      {
+        "id": 35136,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:70",
+        "literals": [
+          "solidity",
+          "0.8",
+          ".10"
+        ]
+      },
+      {
+        "id": 35137,
+        "nodeType": "ImportDirective",
+        "src": "58:65:70",
+        "absolutePath": "lib/openzeppelin-contracts/contracts/utils/structs/EnumerableSet.sol",
+        "file": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 35156,
+        "sourceUnit": 24718,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 35155,
+        "nodeType": "ContractDefinition",
+        "src": "125:306:70",
+        "nodes": [
+          {
+            "id": 35141,
+            "nodeType": "UsingForDirective",
+            "src": "163:49:70",
+            "libraryName": {
+              "id": 35138,
+              "name": "EnumerableSet",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 24717,
+              "src": "169:13:70"
+            },
+            "typeName": {
+              "id": 35140,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 35139,
+                "name": "EnumerableSet.Bytes32Set",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 24323,
+                "src": "187:24:70"
+              },
+              "referencedDeclaration": 24323,
+              "src": "187:24:70",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Bytes32Set_$24323_storage_ptr",
+                "typeString": "struct EnumerableSet.Bytes32Set"
+              }
+            }
+          },
+          {
+            "id": 35143,
+            "nodeType": "VariableDeclaration",
+            "src": "218:26:70",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "periphery",
+            "nameLocation": "235:9:70",
+            "scope": 35155,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 35142,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "218:7:70",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35147,
+            "nodeType": "VariableDeclaration",
+            "src": "261:57:70",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "_operatorByCharacter",
+            "nameLocation": "298:20:70",
+            "scope": 35155,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
+              "typeString": "mapping(uint256 => address)"
+            },
+            "typeName": {
+              "id": 35146,
+              "keyType": {
+                "id": 35144,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "269:7:70",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "261:27:70",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
+                "typeString": "mapping(uint256 => address)"
+              },
+              "valueType": {
+                "id": 35145,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "280:7:70",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35149,
+            "nodeType": "VariableDeclaration",
+            "src": "324:23:70",
+            "constant": false,
+            "functionSelector": "04f3bcec",
+            "mutability": "mutable",
+            "name": "resolver",
+            "nameLocation": "339:8:70",
+            "scope": 35155,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 35148,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "324:7:70",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 35154,
+            "nodeType": "VariableDeclaration",
+            "src": "353:75:70",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "_linkTypesByCharacter",
+            "nameLocation": "407:21:70",
+            "scope": 35155,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+            },
+            "typeName": {
+              "id": 35153,
+              "keyType": {
+                "id": 35150,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "361:7:70",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "353:44:70",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+              },
+              "valueType": {
+                "id": 35152,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35151,
+                  "name": "EnumerableSet.Bytes32Set",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24323,
+                  "src": "372:24:70"
+                },
+                "referencedDeclaration": 24323,
+                "src": "372:24:70",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Bytes32Set_$24323_storage_ptr",
+                  "typeString": "struct EnumerableSet.Bytes32Set"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Web3EntryExtendStorage",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          35155
+        ],
+        "name": "Web3EntryExtendStorage",
+        "nameLocation": "134:22:70",
+        "scope": 35156,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 70
+}

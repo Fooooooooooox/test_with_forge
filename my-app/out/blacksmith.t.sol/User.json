@@ -15,13 +15,13 @@
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b5060f48061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80632053cacf14602d575b600080fd5b603c60383660046090565b603e565b005b806001600160a01b0316631036e0a86040518163ffffffff1660e01b815260040160006040518083038186803b158015607657600080fd5b505afa1580156089573d6000803e3d6000fd5b5050505050565b60006020828403121560a157600080fd5b81356001600160a01b038116811460b757600080fd5b939250505056fea264697066735822122063aa2d3a79014393d0830662707eea65e6084c0a4b5c65f81dc5f9c4621b58f464736f6c634300080f0033",
-    "sourceMap": "138:101:7:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x608060405234801561001057600080fd5b5060f48061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80632053cacf14602d575b600080fd5b603c60383660046090565b603e565b005b806001600160a01b0316631036e0a86040518163ffffffff1660e01b815260040160006040518083038186803b158015607657600080fd5b505afa1580156089573d6000803e3d6000fd5b5050505050565b60006020828403121560a157600080fd5b81356001600160a01b038116811460b757600080fd5b939250505056fea2646970667358221220c00289f00c224f62088c7567c2e62ec473f6daee770f84fcc92f304b1a70c12e64736f6c634300080a0033",
+    "sourceMap": "137:101:8:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80632053cacf14602d575b600080fd5b603c60383660046090565b603e565b005b806001600160a01b0316631036e0a86040518163ffffffff1660e01b815260040160006040518083038186803b158015607657600080fd5b505afa1580156089573d6000803e3d6000fd5b5050505050565b60006020828403121560a157600080fd5b81356001600160a01b038116811460b757600080fd5b939250505056fea264697066735822122063aa2d3a79014393d0830662707eea65e6084c0a4b5c65f81dc5f9c4621b58f464736f6c634300080f0033",
-    "sourceMap": "138:101:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;158:79;;;;;;:::i;:::-;;:::i;:::-;;;217:1;-1:-1:-1;;;;;217:11:7;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;158:79;:::o;14:306:8:-;93:6;146:2;134:9;125:7;121:23;117:32;114:52;;;162:1;159;152:12;114:52;188:23;;-1:-1:-1;;;;;240:31:8;;230:42;;220:70;;286:1;283;276:12;220:70;309:5;14:306;-1:-1:-1;;;14:306:8:o",
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80632053cacf14602d575b600080fd5b603c60383660046090565b603e565b005b806001600160a01b0316631036e0a86040518163ffffffff1660e01b815260040160006040518083038186803b158015607657600080fd5b505afa1580156089573d6000803e3d6000fd5b5050505050565b60006020828403121560a157600080fd5b81356001600160a01b038116811460b757600080fd5b939250505056fea2646970667358221220c00289f00c224f62088c7567c2e62ec473f6daee770f84fcc92f304b1a70c12e64736f6c634300080a0033",
+    "sourceMap": "137:101:8:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;157:79;;;;;;:::i;:::-;;:::i;:::-;;;216:1;-1:-1:-1;;;;;216:11:8;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;157:79;:::o;14:306:10:-;93:6;146:2;134:9;125:7;121:23;117:32;114:52;;;162:1;159;152:12;114:52;188:23;;-1:-1:-1;;;;;240:31:10;;230:42;;220:70;;286:1;283;276:12;220:70;309:5;14:306;-1:-1:-1;;;14:306:10:o",
     "linkReferences": {}
   },
   "methodIdentifiers": {
@@ -29,13 +29,13 @@
   },
   "ast": {
     "absolutePath": "test/blacksmith.t.sol",
-    "id": 21031,
+    "id": 21049,
     "exportedSymbols": {
       "BlackSmith": [
         20958
       ],
       "BlackSmithTest": [
-        21030
+        21048
       ],
       "DSTest": [
         1786
@@ -50,7 +50,7 @@
         3046
       ],
       "User": [
-        20975
+        20993
       ],
       "Vm": [
         4803
@@ -72,56 +72,55 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "39:863:7",
+    "src": "39:862:8",
     "nodes": [
       {
-        "id": 20960,
+        "id": 20978,
         "nodeType": "PragmaDirective",
-        "src": "39:24:7",
+        "src": "39:23:8",
         "literals": [
           "solidity",
-          "^",
           "0.8",
-          ".13"
+          ".10"
         ]
       },
       {
-        "id": 20961,
+        "id": 20979,
         "nodeType": "ImportDirective",
-        "src": "65:39:7",
+        "src": "64:39:8",
         "absolutePath": "lib/forge-std/src/Test.sol",
         "file": "../lib/forge-std/src/Test.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 21031,
+        "scope": 21049,
         "sourceUnit": 4382,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 20962,
+        "id": 20980,
         "nodeType": "ImportDirective",
-        "src": "105:31:7",
+        "src": "104:31:8",
         "absolutePath": "src/blacksmith.sol",
         "file": "../src/blacksmith.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 21031,
+        "scope": 21049,
         "sourceUnit": 20959,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 20975,
+        "id": 20993,
         "nodeType": "ContractDefinition",
-        "src": "138:101:7",
+        "src": "137:101:8",
         "nodes": [
           {
-            "id": 20974,
+            "id": 20992,
             "nodeType": "FunctionDefinition",
-            "src": "158:79:7",
+            "src": "157:79:8",
             "body": {
-              "id": 20973,
+              "id": 20991,
               "nodeType": "Block",
-              "src": "207:30:7",
+              "src": "206:30:8",
               "statements": [
                 {
                   "expression": {
@@ -129,18 +128,18 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 20968,
+                        "id": 20986,
                         "name": "b",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 20965,
-                        "src": "217:1:7",
+                        "referencedDeclaration": 20983,
+                        "src": "216:1:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_BlackSmith_$20958",
                           "typeString": "contract BlackSmith"
                         }
                       },
-                      "id": 20970,
+                      "id": 20988,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -148,13 +147,13 @@
                       "memberName": "onlyOwner",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 20957,
-                      "src": "217:11:7",
+                      "src": "216:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$__$",
                         "typeString": "function () view external"
                       }
                     },
-                    "id": 20971,
+                    "id": 20989,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -162,16 +161,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "217:13:7",
+                    "src": "216:13:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 20972,
+                  "id": 20990,
                   "nodeType": "ExpressionStatement",
-                  "src": "217:13:7"
+                  "src": "216:13:8"
                 }
               ]
             },
@@ -180,20 +179,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "callOnlyOwner",
-            "nameLocation": "167:13:7",
+            "nameLocation": "166:13:8",
             "parameters": {
-              "id": 20966,
+              "id": 20984,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 20965,
+                  "id": 20983,
                   "mutability": "mutable",
                   "name": "b",
-                  "nameLocation": "192:1:7",
+                  "nameLocation": "191:1:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20974,
-                  "src": "181:12:7",
+                  "scope": 20992,
+                  "src": "180:12:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -201,17 +200,17 @@
                     "typeString": "contract BlackSmith"
                   },
                   "typeName": {
-                    "id": 20964,
+                    "id": 20982,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 20963,
+                      "id": 20981,
                       "name": "BlackSmith",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 20958,
-                      "src": "181:10:7"
+                      "src": "180:10:8"
                     },
                     "referencedDeclaration": 20958,
-                    "src": "181:10:7",
+                    "src": "180:10:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_BlackSmith_$20958",
                       "typeString": "contract BlackSmith"
@@ -220,15 +219,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "180:14:7"
+              "src": "179:14:8"
             },
             "returnParameters": {
-              "id": 20967,
+              "id": 20985,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "207:0:7"
+              "src": "206:0:8"
             },
-            "scope": 20975,
+            "scope": 20993,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
@@ -241,27 +240,27 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          20975
+          20993
         ],
         "name": "User",
-        "nameLocation": "147:4:7",
-        "scope": 21031,
+        "nameLocation": "146:4:8",
+        "scope": 21049,
         "usedErrors": []
       },
       {
-        "id": 21030,
+        "id": 21048,
         "nodeType": "ContractDefinition",
-        "src": "241:660:7",
+        "src": "240:660:8",
         "nodes": [
           {
-            "id": 20980,
+            "id": 20998,
             "nodeType": "VariableDeclaration",
-            "src": "281:21:7",
+            "src": "280:21:8",
             "constant": false,
             "mutability": "mutable",
             "name": "blacksmith",
-            "nameLocation": "292:10:7",
-            "scope": 21030,
+            "nameLocation": "291:10:8",
+            "scope": 21048,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -269,17 +268,17 @@
               "typeString": "contract BlackSmith"
             },
             "typeName": {
-              "id": 20979,
+              "id": 20997,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 20978,
+                "id": 20996,
                 "name": "BlackSmith",
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 20958,
-                "src": "281:10:7"
+                "src": "280:10:8"
               },
               "referencedDeclaration": 20958,
-              "src": "281:10:7",
+              "src": "280:10:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_BlackSmith_$20958",
                 "typeString": "contract BlackSmith"
@@ -288,62 +287,62 @@
             "visibility": "internal"
           },
           {
-            "id": 20983,
+            "id": 21001,
             "nodeType": "VariableDeclaration",
-            "src": "308:9:7",
+            "src": "307:9:8",
             "constant": false,
             "mutability": "mutable",
             "name": "user",
-            "nameLocation": "313:4:7",
-            "scope": 21030,
+            "nameLocation": "312:4:8",
+            "scope": 21048,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_User_$20975",
+              "typeIdentifier": "t_contract$_User_$20993",
               "typeString": "contract User"
             },
             "typeName": {
-              "id": 20982,
+              "id": 21000,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 20981,
+                "id": 20999,
                 "name": "User",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 20975,
-                "src": "308:4:7"
+                "referencedDeclaration": 20993,
+                "src": "307:4:8"
               },
-              "referencedDeclaration": 20975,
-              "src": "308:4:7",
+              "referencedDeclaration": 20993,
+              "src": "307:4:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_User_$20975",
+                "typeIdentifier": "t_contract$_User_$20993",
                 "typeString": "contract User"
               }
             },
             "visibility": "internal"
           },
           {
-            "id": 21005,
+            "id": 21023,
             "nodeType": "FunctionDefinition",
-            "src": "404:164:7",
+            "src": "403:164:8",
             "body": {
-              "id": 21004,
+              "id": 21022,
               "nodeType": "Block",
-              "src": "428:140:7",
+              "src": "427:140:8",
               "statements": [
                 {
                   "expression": {
-                    "id": 20995,
+                    "id": 21013,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 20986,
+                      "id": 21004,
                       "name": "blacksmith",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 20980,
-                      "src": "492:10:7",
+                      "referencedDeclaration": 20998,
+                      "src": "491:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_BlackSmith_$20958",
                         "typeString": "contract BlackSmith"
@@ -356,14 +355,14 @@
                         {
                           "arguments": [
                             {
-                              "id": 20992,
+                              "id": 21010,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": -28,
-                              "src": "528:4:7",
+                              "src": "527:4:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_BlackSmithTest_$21030",
+                                "typeIdentifier": "t_contract$_BlackSmithTest_$21048",
                                 "typeString": "contract BlackSmithTest"
                               }
                             }
@@ -371,30 +370,30 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_BlackSmithTest_$21030",
+                                "typeIdentifier": "t_contract$_BlackSmithTest_$21048",
                                 "typeString": "contract BlackSmithTest"
                               }
                             ],
-                            "id": 20991,
+                            "id": 21009,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "520:7:7",
+                            "src": "519:7:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
                             },
                             "typeName": {
-                              "id": 20990,
+                              "id": 21008,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
-                              "src": "520:7:7",
+                              "src": "519:7:8",
                               "typeDescriptions": {}
                             }
                           },
-                          "id": 20993,
+                          "id": 21011,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -402,7 +401,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "520:13:7",
+                          "src": "519:13:8",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -417,36 +416,36 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 20989,
+                        "id": 21007,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "NewExpression",
-                        "src": "505:14:7",
+                        "src": "504:14:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_BlackSmith_$20958_$",
                           "typeString": "function (address) returns (contract BlackSmith)"
                         },
                         "typeName": {
-                          "id": 20988,
+                          "id": 21006,
                           "nodeType": "UserDefinedTypeName",
                           "pathNode": {
-                            "id": 20987,
+                            "id": 21005,
                             "name": "BlackSmith",
                             "nodeType": "IdentifierPath",
                             "referencedDeclaration": 20958,
-                            "src": "509:10:7"
+                            "src": "508:10:8"
                           },
                           "referencedDeclaration": 20958,
-                          "src": "509:10:7",
+                          "src": "508:10:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_BlackSmith_$20958",
                             "typeString": "contract BlackSmith"
                           }
                         }
                       },
-                      "id": 20994,
+                      "id": 21012,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -454,39 +453,39 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "505:29:7",
+                      "src": "504:29:8",
                       "tryCall": false,
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_BlackSmith_$20958",
                         "typeString": "contract BlackSmith"
                       }
                     },
-                    "src": "492:42:7",
+                    "src": "491:42:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_BlackSmith_$20958",
                       "typeString": "contract BlackSmith"
                     }
                   },
-                  "id": 20996,
+                  "id": 21014,
                   "nodeType": "ExpressionStatement",
-                  "src": "492:42:7"
+                  "src": "491:42:8"
                 },
                 {
                   "expression": {
-                    "id": 21002,
+                    "id": 21020,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 20997,
+                      "id": 21015,
                       "name": "user",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 20983,
-                      "src": "544:4:7",
+                      "referencedDeclaration": 21001,
+                      "src": "543:4:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_User_$20975",
+                        "typeIdentifier": "t_contract$_User_$20993",
                         "typeString": "contract User"
                       }
                     },
@@ -496,36 +495,36 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 21000,
+                        "id": 21018,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "NewExpression",
-                        "src": "551:8:7",
+                        "src": "550:8:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_User_$20975_$",
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_User_$20993_$",
                           "typeString": "function () returns (contract User)"
                         },
                         "typeName": {
-                          "id": 20999,
+                          "id": 21017,
                           "nodeType": "UserDefinedTypeName",
                           "pathNode": {
-                            "id": 20998,
+                            "id": 21016,
                             "name": "User",
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 20975,
-                            "src": "555:4:7"
+                            "referencedDeclaration": 20993,
+                            "src": "554:4:8"
                           },
-                          "referencedDeclaration": 20975,
-                          "src": "555:4:7",
+                          "referencedDeclaration": 20993,
+                          "src": "554:4:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_User_$20975",
+                            "typeIdentifier": "t_contract$_User_$20993",
                             "typeString": "contract User"
                           }
                         }
                       },
-                      "id": 21001,
+                      "id": 21019,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -533,22 +532,22 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "551:10:7",
+                      "src": "550:10:8",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_User_$20975",
+                        "typeIdentifier": "t_contract$_User_$20993",
                         "typeString": "contract User"
                       }
                     },
-                    "src": "544:17:7",
+                    "src": "543:17:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_User_$20975",
+                      "typeIdentifier": "t_contract$_User_$20993",
                       "typeString": "contract User"
                     }
                   },
-                  "id": 21003,
+                  "id": 21021,
                   "nodeType": "ExpressionStatement",
-                  "src": "544:17:7"
+                  "src": "543:17:8"
                 }
               ]
             },
@@ -557,32 +556,32 @@
             "kind": "function",
             "modifiers": [],
             "name": "setUp",
-            "nameLocation": "413:5:7",
+            "nameLocation": "412:5:8",
             "parameters": {
-              "id": 20984,
+              "id": 21002,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "418:2:7"
+              "src": "417:2:8"
             },
             "returnParameters": {
-              "id": 20985,
+              "id": 21003,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "428:0:7"
+              "src": "427:0:8"
             },
-            "scope": 21030,
+            "scope": 21048,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 21019,
+            "id": 21037,
             "nodeType": "FunctionDefinition",
-            "src": "574:138:7",
+            "src": "573:138:8",
             "body": {
-              "id": 21018,
+              "id": 21036,
               "nodeType": "Block",
-              "src": "602:110:7",
+              "src": "601:110:8",
               "statements": [
                 {
                   "expression": {
@@ -592,18 +591,18 @@
                         "expression": {
                           "argumentTypes": [],
                           "expression": {
-                            "id": 21009,
+                            "id": 21027,
                             "name": "blacksmith",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 20980,
-                            "src": "672:10:7",
+                            "referencedDeclaration": 20998,
+                            "src": "671:10:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_BlackSmith_$20958",
                               "typeString": "contract BlackSmith"
                             }
                           },
-                          "id": 21010,
+                          "id": 21028,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -611,13 +610,13 @@
                           "memberName": "owner",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 20935,
-                          "src": "672:16:7",
+                          "src": "671:16:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
                             "typeString": "function () view external returns (address)"
                           }
                         },
-                        "id": 21011,
+                        "id": 21029,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -625,7 +624,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "672:18:7",
+                        "src": "671:18:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -635,14 +634,14 @@
                       {
                         "arguments": [
                           {
-                            "id": 21014,
+                            "id": 21032,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": -28,
-                            "src": "699:4:7",
+                            "src": "698:4:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_BlackSmithTest_$21030",
+                              "typeIdentifier": "t_contract$_BlackSmithTest_$21048",
                               "typeString": "contract BlackSmithTest"
                             }
                           }
@@ -650,30 +649,30 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_BlackSmithTest_$21030",
+                              "typeIdentifier": "t_contract$_BlackSmithTest_$21048",
                               "typeString": "contract BlackSmithTest"
                             }
                           ],
-                          "id": 21013,
+                          "id": 21031,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "691:7:7",
+                          "src": "690:7:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_$",
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 21012,
+                            "id": 21030,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "691:7:7",
+                            "src": "690:7:8",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 21015,
+                        "id": 21033,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -681,7 +680,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "691:13:7",
+                        "src": "690:13:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -700,7 +699,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 21008,
+                      "id": 21026,
                       "name": "assertEq",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -716,13 +715,13 @@
                         1674
                       ],
                       "referencedDeclaration": 320,
-                      "src": "663:8:7",
+                      "src": "662:8:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_address_$returns$__$",
                         "typeString": "function (address,address)"
                       }
                     },
-                    "id": 21016,
+                    "id": 21034,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -730,16 +729,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "663:42:7",
+                    "src": "662:42:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 21017,
+                  "id": 21035,
                   "nodeType": "ExpressionStatement",
-                  "src": "663:42:7"
+                  "src": "662:42:8"
                 }
               ]
             },
@@ -748,43 +747,43 @@
             "kind": "function",
             "modifiers": [],
             "name": "testOwner",
-            "nameLocation": "583:9:7",
+            "nameLocation": "582:9:8",
             "parameters": {
-              "id": 21006,
+              "id": 21024,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "592:2:7"
+              "src": "591:2:8"
             },
             "returnParameters": {
-              "id": 21007,
+              "id": 21025,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "602:0:7"
+              "src": "601:0:8"
             },
-            "scope": 21030,
+            "scope": 21048,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 21029,
+            "id": 21047,
             "nodeType": "FunctionDefinition",
-            "src": "816:83:7",
+            "src": "815:83:8",
             "body": {
-              "id": 21028,
+              "id": 21046,
               "nodeType": "Block",
-              "src": "852:47:7",
+              "src": "851:47:8",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 21025,
+                        "id": 21043,
                         "name": "blacksmith",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 20980,
-                        "src": "881:10:7",
+                        "referencedDeclaration": 20998,
+                        "src": "880:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_BlackSmith_$20958",
                           "typeString": "contract BlackSmith"
@@ -799,32 +798,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 21022,
+                        "id": 21040,
                         "name": "user",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 20983,
-                        "src": "862:4:7",
+                        "referencedDeclaration": 21001,
+                        "src": "861:4:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_User_$20975",
+                          "typeIdentifier": "t_contract$_User_$20993",
                           "typeString": "contract User"
                         }
                       },
-                      "id": 21024,
+                      "id": 21042,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "callOnlyOwner",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 20974,
-                      "src": "862:18:7",
+                      "referencedDeclaration": 20992,
+                      "src": "861:18:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_contract$_BlackSmith_$20958_$returns$__$",
                         "typeString": "function (contract BlackSmith) view external"
                       }
                     },
-                    "id": 21026,
+                    "id": 21044,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -832,16 +831,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "862:30:7",
+                    "src": "861:30:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 21027,
+                  "id": 21045,
                   "nodeType": "ExpressionStatement",
-                  "src": "862:30:7"
+                  "src": "861:30:8"
                 }
               ]
             },
@@ -850,20 +849,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "testFailOwner",
-            "nameLocation": "825:13:7",
+            "nameLocation": "824:13:8",
             "parameters": {
-              "id": 21020,
+              "id": 21038,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "838:2:7"
+              "src": "837:2:8"
             },
             "returnParameters": {
-              "id": 21021,
+              "id": 21039,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "852:0:7"
+              "src": "851:0:8"
             },
-            "scope": 21030,
+            "scope": 21048,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
@@ -873,35 +872,35 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 20976,
+              "id": 20994,
               "name": "DSTest",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1786,
-              "src": "268:6:7"
+              "src": "267:6:8"
             },
-            "id": 20977,
+            "id": 20995,
             "nodeType": "InheritanceSpecifier",
-            "src": "268:6:7"
+            "src": "267:6:8"
           }
         ],
         "canonicalName": "BlackSmithTest",
         "contractDependencies": [
           20958,
-          20975
+          20993
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          21030,
+          21048,
           1786
         ],
         "name": "BlackSmithTest",
-        "nameLocation": "250:14:7",
-        "scope": 21031,
+        "nameLocation": "249:14:8",
+        "scope": 21049,
         "usedErrors": []
       }
     ],
     "license": "UNLICENSED"
   },
-  "id": 7
+  "id": 8
 }

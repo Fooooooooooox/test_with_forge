@@ -1,0 +1,330 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "characterId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "initializeLinkModule",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "characterId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "processLink",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "initializeLinkModule(uint256,bytes)": "35aa84b0",
+    "processLink(address,uint256,bytes)": "6cca63f2"
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/ILinkModule4Character.sol",
+    "id": 29848,
+    "exportedSymbols": {
+      "ILinkModule4Character": [
+        29847
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:310:43",
+    "nodes": [
+      {
+        "id": 29828,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:43",
+        "literals": [
+          "solidity",
+          "0.8",
+          ".10"
+        ]
+      },
+      {
+        "id": 29847,
+        "nodeType": "ContractDefinition",
+        "src": "58:284:43",
+        "nodes": [
+          {
+            "id": 29837,
+            "nodeType": "FunctionDefinition",
+            "src": "96:120:43",
+            "functionSelector": "35aa84b0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initializeLinkModule",
+            "nameLocation": "105:20:43",
+            "parameters": {
+              "id": 29833,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29830,
+                  "mutability": "mutable",
+                  "name": "characterId",
+                  "nameLocation": "134:11:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29837,
+                  "src": "126:19:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 29829,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29832,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "162:4:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29837,
+                  "src": "147:19:43",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 29831,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:5:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:42:43"
+            },
+            "returnParameters": {
+              "id": 29836,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29835,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29837,
+                  "src": "202:12:43",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 29834,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "202:5:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "201:14:43"
+            },
+            "scope": 29847,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 29846,
+            "nodeType": "FunctionDefinition",
+            "src": "222:118:43",
+            "functionSelector": "6cca63f2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "processLink",
+            "nameLocation": "231:11:43",
+            "parameters": {
+              "id": 29844,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29839,
+                  "mutability": "mutable",
+                  "name": "caller",
+                  "nameLocation": "260:6:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29846,
+                  "src": "252:14:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 29838,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "252:7:43",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29841,
+                  "mutability": "mutable",
+                  "name": "characterId",
+                  "nameLocation": "284:11:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29846,
+                  "src": "276:19:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 29840,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "276:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29843,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "320:4:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29846,
+                  "src": "305:19:43",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 29842,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "305:5:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "242:88:43"
+            },
+            "returnParameters": {
+              "id": 29845,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "339:0:43"
+            },
+            "scope": 29847,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ILinkModule4Character",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          29847
+        ],
+        "name": "ILinkModule4Character",
+        "nameLocation": "68:21:43",
+        "scope": 29848,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 43
+}

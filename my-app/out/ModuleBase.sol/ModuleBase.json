@@ -1,0 +1,510 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Web3Entry",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "Web3Entry()": "c5a5ed51"
+  },
+  "ast": {
+    "absolutePath": "src/modules/ModuleBase.sol",
+    "id": 34145,
+    "exportedSymbols": {
+      "ModuleBase": [
+        34144
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:342:64",
+    "nodes": [
+      {
+        "id": 34109,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:64",
+        "literals": [
+          "solidity",
+          "0.8",
+          ".10"
+        ]
+      },
+      {
+        "id": 34144,
+        "nodeType": "ContractDefinition",
+        "src": "58:316:64",
+        "nodes": [
+          {
+            "id": 34111,
+            "nodeType": "VariableDeclaration",
+            "src": "93:34:64",
+            "constant": false,
+            "functionSelector": "c5a5ed51",
+            "mutability": "immutable",
+            "name": "Web3Entry",
+            "nameLocation": "118:9:64",
+            "scope": 34144,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 34110,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "93:7:64",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 34123,
+            "nodeType": "ModifierDefinition",
+            "src": "134:101:64",
+            "body": {
+              "id": 34122,
+              "nodeType": "Block",
+              "src": "159:76:64",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 34117,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 34114,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "177:3:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 34115,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "177:10:64",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 34116,
+                          "name": "Web3Entry",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34111,
+                          "src": "191:9:64",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "177:23:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4e6f7457656233456e747279",
+                        "id": 34118,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "202:14:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_8c852f1c6ab9ed30694f47a65161e2256f2ab051d31070715bf82917e4cb0b15",
+                          "typeString": "literal_string \"NotWeb3Entry\""
+                        },
+                        "value": "NotWeb3Entry"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_8c852f1c6ab9ed30694f47a65161e2256f2ab051d31070715bf82917e4cb0b15",
+                          "typeString": "literal_string \"NotWeb3Entry\""
+                        }
+                      ],
+                      "id": 34113,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "169:7:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 34119,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "169:48:64",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34120,
+                  "nodeType": "ExpressionStatement",
+                  "src": "169:48:64"
+                },
+                {
+                  "id": 34121,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "227:1:64"
+                }
+              ]
+            },
+            "name": "onlyWeb3Entry",
+            "nameLocation": "143:13:64",
+            "parameters": {
+              "id": 34112,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:2:64"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 34143,
+            "nodeType": "FunctionDefinition",
+            "src": "241:131:64",
+            "body": {
+              "id": 34142,
+              "nodeType": "Block",
+              "src": "272:100:64",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 34134,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 34129,
+                          "name": "web3Entry",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 34125,
+                          "src": "290:9:64",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "arguments": [
+                            {
+                              "hexValue": "30",
+                              "id": 34132,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "311:1:64",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              },
+                              "value": "0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "id": 34131,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "303:7:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 34130,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "303:7:64",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 34133,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "303:10:64",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "290:23:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "496e76616c696457656233456e747279",
+                        "id": 34135,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "315:18:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_e0ff573b79bff782d42f5260996dd55b29b7f66bbfd3eb25cbdf074772f49764",
+                          "typeString": "literal_string \"InvalidWeb3Entry\""
+                        },
+                        "value": "InvalidWeb3Entry"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_e0ff573b79bff782d42f5260996dd55b29b7f66bbfd3eb25cbdf074772f49764",
+                          "typeString": "literal_string \"InvalidWeb3Entry\""
+                        }
+                      ],
+                      "id": 34128,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "282:7:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 34136,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "282:52:64",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34137,
+                  "nodeType": "ExpressionStatement",
+                  "src": "282:52:64"
+                },
+                {
+                  "expression": {
+                    "id": 34140,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 34138,
+                      "name": "Web3Entry",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34111,
+                      "src": "344:9:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 34139,
+                      "name": "web3Entry",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34125,
+                      "src": "356:9:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "344:21:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 34141,
+                  "nodeType": "ExpressionStatement",
+                  "src": "344:21:64"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 34126,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34125,
+                  "mutability": "mutable",
+                  "name": "web3Entry",
+                  "nameLocation": "261:9:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34143,
+                  "src": "253:17:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34124,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "253:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "252:19:64"
+            },
+            "returnParameters": {
+              "id": 34127,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "272:0:64"
+            },
+            "scope": 34144,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "ModuleBase",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          34144
+        ],
+        "name": "ModuleBase",
+        "nameLocation": "76:10:64",
+        "scope": 34145,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 64
+}

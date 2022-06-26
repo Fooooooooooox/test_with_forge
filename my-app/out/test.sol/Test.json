@@ -837,7 +837,6 @@
             "id": 1830,
             "nodeType": "UsingForDirective",
             "src": "217:32:2",
-            "global": false,
             "libraryName": {
               "id": 1827,
               "name": "stdStorage",
@@ -945,7 +944,6 @@
             "nodeType": "EventDefinition",
             "src": "630:31:2",
             "anonymous": false,
-            "eventSelector": "fb102865d50addddf69da9b5aa1bced66c80cf869a5c8d0471a467e18ce9cab1",
             "name": "log_array",
             "nameLocation": "636:9:2",
             "parameters": {
@@ -998,7 +996,6 @@
             "nodeType": "EventDefinition",
             "src": "666:30:2",
             "anonymous": false,
-            "eventSelector": "890a82679b470f2bd82816ed9b161f97d8b967f37fa3647c21d5bf39749e2dd5",
             "name": "log_array",
             "nameLocation": "672:9:2",
             "parameters": {
@@ -1051,7 +1048,6 @@
             "nodeType": "EventDefinition",
             "src": "701:49:2",
             "anonymous": false,
-            "eventSelector": "00aaa39c9ffb5f567a4534380c737075702e1f7f14107fc95328e3b56c0325fb",
             "name": "log_named_array",
             "nameLocation": "707:15:2",
             "parameters": {
@@ -1132,7 +1128,6 @@
             "nodeType": "EventDefinition",
             "src": "755:48:2",
             "anonymous": false,
-            "eventSelector": "a73eda09662f46dde729be4611385ff34fe6c44fbbc6f7e17b042b59a3445b57",
             "name": "log_named_array",
             "nameLocation": "761:15:2",
             "parameters": {
@@ -18488,7 +18483,6 @@
             "nodeType": "EventDefinition",
             "src": "14264:71:2",
             "anonymous": false,
-            "eventSelector": "9c9555b1e3102e3cf48f427d79cb678f5d9bd1ed0ad574389461e255f95170ed",
             "name": "SlotFound",
             "nameLocation": "14270:9:2",
             "parameters": {
@@ -18617,7 +18611,6 @@
             "nodeType": "EventDefinition",
             "src": "14340:51:2",
             "anonymous": false,
-            "eventSelector": "080fc4a96620c4462e705b23f346413fe3796bb63c6f8d8591baec0e231577a5",
             "name": "WARNING_UninitedSlot",
             "nameLocation": "14346:20:2",
             "parameters": {

@@ -1,0 +1,988 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Web3Entry",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b5060918061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063c5a5ed5114602d575b600080fd5b600054603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea2646970667358221220f58e1d77606404e803604ca0d2733d29d4c8eff53b88b418ca3e14ae4c09329264736f6c634300080a0033",
+    "sourceMap": "162:1705:69:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063c5a5ed5114602d575b600080fd5b600054603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea2646970667358221220f58e1d77606404e803604ca0d2733d29d4c8eff53b88b418ca3e14ae4c09329264736f6c634300080a0033",
+    "sourceMap": "162:1705:69:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;353:24;;;;;-1:-1:-1;;;;;353:24:69;;;;;;-1:-1:-1;;;;;178:32:76;;;160:51;;148:2;133:18;353:24:69;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "Web3Entry()": "c5a5ed51"
+  },
+  "ast": {
+    "absolutePath": "src/storage/LinklistStorage.sol",
+    "id": 35135,
+    "exportedSymbols": {
+      "DataTypes": [
+        31438
+      ],
+      "EnumerableSet": [
+        24717
+      ],
+      "LinklistStorage": [
+        35134
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:1835:69",
+    "nodes": [
+      {
+        "id": 35046,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:69",
+        "literals": [
+          "solidity",
+          "0.8",
+          ".10"
+        ]
+      },
+      {
+        "id": 35047,
+        "nodeType": "ImportDirective",
+        "src": "58:36:69",
+        "absolutePath": "src/libraries/DataTypes.sol",
+        "file": "../libraries/DataTypes.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 35135,
+        "sourceUnit": 31439,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 35048,
+        "nodeType": "ImportDirective",
+        "src": "95:65:69",
+        "absolutePath": "lib/openzeppelin-contracts/contracts/utils/structs/EnumerableSet.sol",
+        "file": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 35135,
+        "sourceUnit": 24718,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 35134,
+        "nodeType": "ContractDefinition",
+        "src": "162:1705:69",
+        "nodes": [
+          {
+            "id": 35052,
+            "nodeType": "UsingForDirective",
+            "src": "193:46:69",
+            "libraryName": {
+              "id": 35049,
+              "name": "EnumerableSet",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 24717,
+              "src": "199:13:69"
+            },
+            "typeName": {
+              "id": 35051,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 35050,
+                "name": "EnumerableSet.UintSet",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 24587,
+                "src": "217:21:69"
+              },
+              "referencedDeclaration": 24587,
+              "src": "217:21:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_UintSet_$24587_storage_ptr",
+                "typeString": "struct EnumerableSet.UintSet"
+              }
+            }
+          },
+          {
+            "id": 35056,
+            "nodeType": "UsingForDirective",
+            "src": "244:49:69",
+            "libraryName": {
+              "id": 35053,
+              "name": "EnumerableSet",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 24717,
+              "src": "250:13:69"
+            },
+            "typeName": {
+              "id": 35055,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 35054,
+                "name": "EnumerableSet.Bytes32Set",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 24323,
+                "src": "268:24:69"
+              },
+              "referencedDeclaration": 24323,
+              "src": "268:24:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Bytes32Set_$24323_storage_ptr",
+                "typeString": "struct EnumerableSet.Bytes32Set"
+              }
+            }
+          },
+          {
+            "id": 35060,
+            "nodeType": "UsingForDirective",
+            "src": "298:49:69",
+            "libraryName": {
+              "id": 35057,
+              "name": "EnumerableSet",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 24717,
+              "src": "304:13:69"
+            },
+            "typeName": {
+              "id": 35059,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 35058,
+                "name": "EnumerableSet.AddressSet",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 24430,
+                "src": "322:24:69"
+              },
+              "referencedDeclaration": 24430,
+              "src": "322:24:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_AddressSet_$24430_storage_ptr",
+                "typeString": "struct EnumerableSet.AddressSet"
+              }
+            }
+          },
+          {
+            "id": 35062,
+            "nodeType": "VariableDeclaration",
+            "src": "353:24:69",
+            "constant": false,
+            "functionSelector": "c5a5ed51",
+            "mutability": "mutable",
+            "name": "Web3Entry",
+            "nameLocation": "368:9:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 35061,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "353:7:69",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 35066,
+            "nodeType": "VariableDeclaration",
+            "src": "422:46:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkTypes",
+            "nameLocation": "459:9:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_bytes32_$",
+              "typeString": "mapping(uint256 => bytes32)"
+            },
+            "typeName": {
+              "id": 35065,
+              "keyType": {
+                "id": 35063,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "430:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "422:27:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_bytes32_$",
+                "typeString": "mapping(uint256 => bytes32)"
+              },
+              "valueType": {
+                "id": 35064,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "441:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35071,
+            "nodeType": "VariableDeclaration",
+            "src": "507:71:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingCharacterList",
+            "nameLocation": "558:20:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_UintSet_$24587_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.UintSet)"
+            },
+            "typeName": {
+              "id": 35070,
+              "keyType": {
+                "id": 35067,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "515:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "507:41:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_UintSet_$24587_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.UintSet)"
+              },
+              "valueType": {
+                "id": 35069,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35068,
+                  "name": "EnumerableSet.UintSet",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24587,
+                  "src": "526:21:69"
+                },
+                "referencedDeclaration": 24587,
+                "src": "526:21:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_UintSet_$24587_storage_ptr",
+                  "typeString": "struct EnumerableSet.UintSet"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35076,
+            "nodeType": "VariableDeclaration",
+            "src": "621:72:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingAddressList",
+            "nameLocation": "675:18:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_AddressSet_$24430_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.AddressSet)"
+            },
+            "typeName": {
+              "id": 35075,
+              "keyType": {
+                "id": 35072,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "629:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "621:44:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_AddressSet_$24430_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.AddressSet)"
+              },
+              "valueType": {
+                "id": 35074,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35073,
+                  "name": "EnumerableSet.AddressSet",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24430,
+                  "src": "640:24:69"
+                },
+                "referencedDeclaration": 24430,
+                "src": "640:24:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_AddressSet_$24430_storage_ptr",
+                  "typeString": "struct EnumerableSet.AddressSet"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35081,
+            "nodeType": "VariableDeclaration",
+            "src": "729:67:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingLinklists",
+            "nameLocation": "780:16:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_UintSet_$24587_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.UintSet)"
+            },
+            "typeName": {
+              "id": 35080,
+              "keyType": {
+                "id": 35077,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "737:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "729:41:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_UintSet_$24587_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.UintSet)"
+              },
+              "valueType": {
+                "id": 35079,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35078,
+                  "name": "EnumerableSet.UintSet",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24587,
+                  "src": "748:21:69"
+                },
+                "referencedDeclaration": 24587,
+                "src": "748:21:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_UintSet_$24587_storage_ptr",
+                  "typeString": "struct EnumerableSet.UintSet"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35086,
+            "nodeType": "VariableDeclaration",
+            "src": "830:66:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkKeysList",
+            "nameLocation": "884:12:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+            },
+            "typeName": {
+              "id": 35085,
+              "keyType": {
+                "id": 35082,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "838:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "830:44:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+              },
+              "valueType": {
+                "id": 35084,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35083,
+                  "name": "EnumerableSet.Bytes32Set",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24323,
+                  "src": "849:24:69"
+                },
+                "referencedDeclaration": 24323,
+                "src": "849:24:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Bytes32Set_$24323_storage_ptr",
+                  "typeString": "struct EnumerableSet.Bytes32Set"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35091,
+            "nodeType": "VariableDeclaration",
+            "src": "960:69:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingERC721List",
+            "nameLocation": "1012:17:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_ERC721Struct_$31437_storage_$",
+              "typeString": "mapping(bytes32 => struct DataTypes.ERC721Struct)"
+            },
+            "typeName": {
+              "id": 35090,
+              "keyType": {
+                "id": 35087,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "968:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "960:42:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_ERC721Struct_$31437_storage_$",
+                "typeString": "mapping(bytes32 => struct DataTypes.ERC721Struct)"
+              },
+              "valueType": {
+                "id": 35089,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35088,
+                  "name": "DataTypes.ERC721Struct",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 31437,
+                  "src": "979:22:69"
+                },
+                "referencedDeclaration": 31437,
+                "src": "979:22:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_ERC721Struct_$31437_storage_ptr",
+                  "typeString": "struct DataTypes.ERC721Struct"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35096,
+            "nodeType": "VariableDeclaration",
+            "src": "1066:62:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkNoteList",
+            "nameLocation": "1116:12:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_NoteStruct_$31432_storage_$",
+              "typeString": "mapping(bytes32 => struct DataTypes.NoteStruct)"
+            },
+            "typeName": {
+              "id": 35095,
+              "keyType": {
+                "id": 35092,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "1074:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1066:40:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_NoteStruct_$31432_storage_$",
+                "typeString": "mapping(bytes32 => struct DataTypes.NoteStruct)"
+              },
+              "valueType": {
+                "id": 35094,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35093,
+                  "name": "DataTypes.NoteStruct",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 31432,
+                  "src": "1085:20:69"
+                },
+                "referencedDeclaration": 31432,
+                "src": "1085:20:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_NoteStruct_$31432_storage_ptr",
+                  "typeString": "struct DataTypes.NoteStruct"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35101,
+            "nodeType": "VariableDeclaration",
+            "src": "1174:83:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingCharacterLinkList",
+            "nameLocation": "1233:24:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_CharacterLinkStruct_$31427_storage_$",
+              "typeString": "mapping(bytes32 => struct DataTypes.CharacterLinkStruct)"
+            },
+            "typeName": {
+              "id": 35100,
+              "keyType": {
+                "id": 35097,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "1182:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1174:49:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_CharacterLinkStruct_$31427_storage_$",
+                "typeString": "mapping(bytes32 => struct DataTypes.CharacterLinkStruct)"
+              },
+              "valueType": {
+                "id": 35099,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35098,
+                  "name": "DataTypes.CharacterLinkStruct",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 31427,
+                  "src": "1193:29:69"
+                },
+                "referencedDeclaration": 31427,
+                "src": "1193:29:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_CharacterLinkStruct_$31427_storage_ptr",
+                  "typeString": "struct DataTypes.CharacterLinkStruct"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35105,
+            "nodeType": "VariableDeclaration",
+            "src": "1300:50:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingAnylist",
+            "nameLocation": "1336:14:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
+              "typeString": "mapping(bytes32 => string)"
+            },
+            "typeName": {
+              "id": 35104,
+              "keyType": {
+                "id": 35102,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "1308:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1300:26:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
+                "typeString": "mapping(bytes32 => string)"
+              },
+              "valueType": {
+                "id": 35103,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "1319:6:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35109,
+            "nodeType": "VariableDeclaration",
+            "src": "1387:52:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "currentTakeOver",
+            "nameLocation": "1424:15:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+              "typeString": "mapping(uint256 => uint256)"
+            },
+            "typeName": {
+              "id": 35108,
+              "keyType": {
+                "id": 35106,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1395:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1387:27:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                "typeString": "mapping(uint256 => uint256)"
+              },
+              "valueType": {
+                "id": 35107,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1406:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35113,
+            "nodeType": "VariableDeclaration",
+            "src": "1445:41:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "_uris",
+            "nameLocation": "1481:5:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_string_storage_$",
+              "typeString": "mapping(uint256 => string)"
+            },
+            "typeName": {
+              "id": 35112,
+              "keyType": {
+                "id": 35110,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1453:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1445:26:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_string_storage_$",
+                "typeString": "mapping(uint256 => string)"
+              },
+              "valueType": {
+                "id": 35111,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "1464:6:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35118,
+            "nodeType": "VariableDeclaration",
+            "src": "1563:71:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingERC721Keys",
+            "nameLocation": "1617:17:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+            },
+            "typeName": {
+              "id": 35117,
+              "keyType": {
+                "id": 35114,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1571:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1563:44:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+              },
+              "valueType": {
+                "id": 35116,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35115,
+                  "name": "EnumerableSet.Bytes32Set",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24323,
+                  "src": "1582:24:69"
+                },
+                "referencedDeclaration": 24323,
+                "src": "1582:24:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Bytes32Set_$24323_storage_ptr",
+                  "typeString": "struct EnumerableSet.Bytes32Set"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35123,
+            "nodeType": "VariableDeclaration",
+            "src": "1640:66:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkNoteKeys",
+            "nameLocation": "1694:12:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+            },
+            "typeName": {
+              "id": 35122,
+              "keyType": {
+                "id": 35119,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1648:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1640:44:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+              },
+              "valueType": {
+                "id": 35121,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35120,
+                  "name": "EnumerableSet.Bytes32Set",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24323,
+                  "src": "1659:24:69"
+                },
+                "referencedDeclaration": 24323,
+                "src": "1659:24:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Bytes32Set_$24323_storage_ptr",
+                  "typeString": "struct EnumerableSet.Bytes32Set"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35128,
+            "nodeType": "VariableDeclaration",
+            "src": "1712:78:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingCharacterLinkKeys",
+            "nameLocation": "1766:24:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+            },
+            "typeName": {
+              "id": 35127,
+              "keyType": {
+                "id": 35124,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1720:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1712:44:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+              },
+              "valueType": {
+                "id": 35126,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35125,
+                  "name": "EnumerableSet.Bytes32Set",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24323,
+                  "src": "1731:24:69"
+                },
+                "referencedDeclaration": 24323,
+                "src": "1731:24:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Bytes32Set_$24323_storage_ptr",
+                  "typeString": "struct EnumerableSet.Bytes32Set"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 35133,
+            "nodeType": "VariableDeclaration",
+            "src": "1796:68:69",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "linkingAnyKeys",
+            "nameLocation": "1850:14:69",
+            "scope": 35134,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+              "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+            },
+            "typeName": {
+              "id": 35132,
+              "keyType": {
+                "id": 35129,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1804:7:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1796:44:69",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bytes32Set_$24323_storage_$",
+                "typeString": "mapping(uint256 => struct EnumerableSet.Bytes32Set)"
+              },
+              "valueType": {
+                "id": 35131,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 35130,
+                  "name": "EnumerableSet.Bytes32Set",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 24323,
+                  "src": "1815:24:69"
+                },
+                "referencedDeclaration": 24323,
+                "src": "1815:24:69",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Bytes32Set_$24323_storage_ptr",
+                  "typeString": "struct EnumerableSet.Bytes32Set"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "LinklistStorage",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          35134
+        ],
+        "name": "LinklistStorage",
+        "nameLocation": "171:15:69",
+        "scope": 35135,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 69
+}

@@ -449,7 +449,7 @@
         9339
       ],
       "Events": [
-        11402
+        11375
       ],
       "IERC165": [
         5352
@@ -506,7 +506,7 @@
         "file": "../libraries/Events.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 9390,
-        "sourceUnit": 11403,
+        "sourceUnit": 11376,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -682,10 +682,10 @@
                         "name": "Events",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 11402,
+                        "referencedDeclaration": 11375,
                         "src": "314:6:21",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Events_$11402_$",
+                          "typeIdentifier": "t_type$_t_contract$_Events_$11375_$",
                           "typeString": "type(library Events)"
                         }
                       },
@@ -696,7 +696,7 @@
                       "lValueRequested": false,
                       "memberName": "BaseInitialized",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11059,
+                      "referencedDeclaration": 11032,
                       "src": "314:22:21",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$returns$__$",

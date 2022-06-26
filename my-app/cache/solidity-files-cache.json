@@ -1521,8 +1521,8 @@
       }
     },
     "src/Web3Entry.sol": {
-      "lastModificationDate": 1656218646353,
-      "contentHash": "43d72c0bf205266e647ae5ac8fb148e9",
+      "lastModificationDate": 1656255488833,
+      "contentHash": "04ddccffecdbabc7a77eb03237705f92",
       "sourceName": "src/Web3Entry.sol",
       "solcConfig": {
         "settings": {
@@ -3419,6 +3419,86 @@
         },
         "OwnerUpOnlyTest": {
           "0.8.10+commit.fc410830.Darwin.appleclang": "onlyOwner.t.sol/OwnerUpOnlyTest.json"
+        }
+      }
+    },
+    "test/operatorAuthority.t.sol": {
+      "lastModificationDate": 1656260327010,
+      "contentHash": "dc4e9d7995170d086bbb8838fe8d6a06",
+      "sourceName": "test/operatorAuthority.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/Clones.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/structs/EnumerableSet.sol",
+        "src/Web3Entry.sol",
+        "src/base/ERC721.sol",
+        "src/base/ERC721Enumerable.sol",
+        "src/base/NFTBase.sol",
+        "src/interfaces/ILinkModule4Address.sol",
+        "src/interfaces/ILinkModule4Character.sol",
+        "src/interfaces/ILinkModule4ERC721.sol",
+        "src/interfaces/ILinkModule4Linklist.sol",
+        "src/interfaces/ILinkModule4Note.sol",
+        "src/interfaces/ILinklist.sol",
+        "src/interfaces/IMintModule4Note.sol",
+        "src/interfaces/IMintNFT.sol",
+        "src/interfaces/IResolver.sol",
+        "src/interfaces/IWeb3Entry.sol",
+        "src/libraries/CharacterLogic.sol",
+        "src/libraries/Constants.sol",
+        "src/libraries/DataTypes.sol",
+        "src/libraries/Events.sol",
+        "src/libraries/LinkLogic.sol",
+        "src/libraries/LinkModuleLogic.sol",
+        "src/libraries/PostLogic.sol",
+        "src/storage/Web3EntryExtendStorage.sol",
+        "src/storage/Web3EntryStorage.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "OperatorAuthorityTest": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "operatorAuthority.t.sol/OperatorAuthorityTest.json"
         }
       }
     }

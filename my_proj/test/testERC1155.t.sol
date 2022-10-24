@@ -7,6 +7,7 @@ import "../src/erc1155/ERC1155Token.sol";
 
 contract testERC1155 is Test {
     FactoryERC1155 factoryERC1155;
+    address alice = address(0x1111);
 
     function setUp() public {
         factoryERC1155 = new FactoryERC1155();
@@ -25,7 +26,10 @@ contract testERC1155 is Test {
 
         string memory tokenName = factoryERC1155.getNameById(0, 1);
         assertEq(tokenName, "one");
+        vm.stopPrank();
 
+        address owner = ERC1155Token(myDiaryContract).owner();
+        vm.prank(owner);
         ERC1155Token(myDiaryContract).addNewToken("three", 3);
 
         (address _contract, address _owner, string memory _uri, uint _supply) = factoryERC1155.getERC1155byIndexAndId(0, 0);

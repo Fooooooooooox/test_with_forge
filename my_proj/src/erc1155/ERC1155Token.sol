@@ -44,7 +44,7 @@ contract ERC1155Token is ERC1155, Ownable {
     /*
     issue a new token
     */
-    function addNewToken(string memory _name, uint _id) public {
+    function addNewToken(string memory _name, uint _id) public onlyOwner {
         names.push(_name);
         ids.push(_id);
         nameToId[_name] = _id;

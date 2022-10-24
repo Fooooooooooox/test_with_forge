@@ -10,9 +10,10 @@ contract FsTest is Test {
     function setUp() public {}
 
 
-    function testReadTrie() public {
+    function testReadTrie() view public {
         string memory root = "../../../../../../../tmp/cannon/";
         string memory path = string.concat(root, "/src/test/fixtures/broadcast.log.json");
+        console.log(path);
     }
 
 }

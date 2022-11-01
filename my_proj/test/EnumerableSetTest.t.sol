@@ -14,7 +14,7 @@ contract EnumerableSetTest is Test {
     EnumerableSet.AddressSet private mySet;
 
     // you can't use struct in mappings(EnumerableSet is struct)
-    // mapping(uint256 => EnumerableSet.AddressSet) internal _operatorListByCharacter;
+    mapping(uint256 => EnumerableSet.AddressSet) internal _operatorListByCharacter;
     
     function setUp() public {
     }
@@ -27,17 +27,32 @@ contract EnumerableSetTest is Test {
         mySet.remove(address(0x1));
         exists = mySet.contains(address(0x1));
         assert(!exists);
-        // _operatorListByCharacter[0] = new EnumerableSet.AddressSet;
-        // exists = _operatorListByCharacter[0].contains(address(0x1));
-        // assert(exists);
-        
-        address[] memory myArr = new address[](2);
-        myArr[0] = address(0x0);
-        myArr[1] = address(0x1);
-        myArr[1] = address(0x0);
-        console.log(myArr.length);
+        _operatorListByCharacter[0].add(address(0x1));
+        exists = _operatorListByCharacter[0].contains(address(0x1));
+        assert(exists);
 
+        _operatorListByCharacter[0].add(address(0x222));
+        _operatorListByCharacter[0].add(address(0x3));
+        _operatorListByCharacter[0].add(address(0x4));
+
+        address _value = _operatorListByCharacter[0].at(2);
+        console.log(_value);
+
+        uint256 _length = _operatorListByCharacter[0].length();
+        console.log("hhhh this is length:", _length);
+
+        address[] memory _list = _operatorListByCharacter[0].values();
+
+        for (uint256 index = 0; index < _list.length; index++) {
+            _value = _list[index];
+            _operatorListByCharacter[0].remove(_value);
+        }
         
+        assert(!_operatorListByCharacter[0].contains(address(0x1)));
+        assert(!_operatorListByCharacter[0].contains(address(0x222)));
+        assert(!_operatorListByCharacter[0].contains(address(0x3)));
+        assert(!_operatorListByCharacter[0].contains(address(0x4)));
+
     }
 
 }

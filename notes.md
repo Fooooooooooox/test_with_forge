@@ -33,3 +33,19 @@ forge test --fork-url https://rpc.crossbell.io --fork-block-number 1 --etherscan
 (idk what is etherscan here for yet.../?todo/)
 
 
+
+
+# husky
+(check in foundry-hardhat-template)
+
+```shell
+yarn add —save-dev husky 
+npx husky install
+npx husky -v
+```
+
+# lint
+
+```shell
+npm init @eslint/config
+```

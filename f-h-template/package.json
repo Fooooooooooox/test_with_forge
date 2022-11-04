@@ -127,7 +127,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lint:fix"
+      "pre-commit": "yarn prettier:fix && yarn solhint:fix && npx eslint **/*.{js,ts} --fix"
     }
   }
 }

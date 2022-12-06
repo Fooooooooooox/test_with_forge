@@ -32,7 +32,36 @@ contract ParticipatedWithBitmapTest is Test {
 
         uint256 det = ~uint256(0) ;
         console.logBytes(toBytes(det));
-        console.logBytes(toBytes(~uint256(0) >> 20));        
+        console.logBytes(toBytes(~uint256(0) >> 20));   
+
+        uint notx = ~x;
+        console.log(getLastNBits(x, 7)); //6a: 1101010
+        console.log(getLastNBits(notx, 7)); // 0010101
+        // console.logBytes(toBytes(~x));    
+
+        // read position 
+        console.log(x & (1 << 2));
+        assertEq(x & (1 << 2),0);
+        console.log(x & (1 << 3));
+        // assertEq(x & (1 << 3),1);
+        console.log(x & (1 << 4));
+        assertEq(x & (1 << 4),0);
+
+        bool isset = isBitSet(x, 1);
+        assert(isset);
+
+        assert(!isBitSet(x, 0));
+        assert(isBitSet(x, 1));
+        assert(!isBitSet(x, 2));
+        assert(isBitSet(x, 3));
+        assert(!isBitSet(x, 4));
+        assert(isBitSet(x, 5));
+        assert(isBitSet(x, 6));
+        assert(isBitSet(x, 7));
+    }
+
+    function isBitSet(uint256 b, uint256 pos) public pure returns (bool) {
+        return ((b >> pos) & 1) == 1;
     }
 
     // Get last n bits from x
